@@ -1,0 +1,30 @@
+{
+  "name": "mcp-weather-server",
+  "version": "0.0.1",
+  "description": "mcp-weather-server MCP server",
+  "type": "module",
+  "bin": {
+    "mcp-weather-server": "./dist/index.js"
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsc && mcp-build",
+    "watch": "tsc --watch",
+    "start": "node dist/index.js"
+  },
+  "dependencies": {
+    "axios": "^1.8.4",
+    "mcp-framework": "^0.2.2",
+    "tool": "^21.0.0",
+    "weather": "^1.0.4"
+  },
+  "devDependencies": {
+    "@types/node": "^20.11.24",
+    "typescript": "^5.3.3"
+  },
+  "engines": {
+    "node": ">=18.19.0"
+  }
+}
